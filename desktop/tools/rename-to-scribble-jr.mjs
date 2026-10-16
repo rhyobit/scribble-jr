@@ -5,8 +5,12 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {execSync} from 'node:child_process';
 
-const pageRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'editions', 'free', 'src');
+const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
+const pageRoot = path.join(repoRoot, 'editions', 'free', 'src');
+// Last upstream ScratchJr commit; the untouched locale files are read from here.
+const ORIGINAL_COMMIT = '566f2f9';
 const RENAME_KEYS = ['QUICK_INTRO', 'ABOUT_SCRATCHJR', 'ABOUT_WHAT_IS', 'ABOUT_DESCRIPTION',
     'SHARING_EMAIL_SUBJECT', 'SHARING_EMAIL_TEXT', 'USAGE_QUESTION'];
 
@@ -43,20 +47,19 @@ for (const file of fs.readdirSync(locDir).filter((f) => f.endsWith('.json'))) {
     const p = path.join(locDir, file);
     const raw = fs.readFileSync(p, 'utf8');
     const strings = JSON.parse(raw);
+    // Always start from the original ScratchJr text so re-running gives the same result
+    // (the notice itself mentions ScratchJr, so editing in place would compound).
+    const original = JSON.parse(execSync(`git show ${ORIGINAL_COMMIT}:editions/free/src/localizations/${file}`,
+        {cwd: repoRoot, encoding: 'utf8', maxBuffer: 16 * 1024 * 1024}));
     for (const key of RENAME_KEYS) {
-        if (typeof strings[key] === 'string') {
-            strings[key] = strings[key].replace(/Scratch ?Jr/g, 'Scribble Jr');
+        if (typeof original[key] === 'string') {
+            strings[key] = original[key].replace(/Scratch ?Jr/g, 'Scribble Jr');
         }
     }
-    if (notice[lang] && strings.ABOUT_DESCRIPTION && !strings.ABOUT_DESCRIPTION.includes(notice[lang])) {
-        strings.ABOUT_DESCRIPTION += '<br/><br/>' + notice[lang];
-    }
-    if (strings.ABOUT_DESCRIPTION && !strings.ABOUT_DESCRIPTION.includes(ADAPTED_BY)) {
-        strings.ABOUT_DESCRIPTION += '<br/><br/>' + ADAPTED_BY;
-    }
-    // Attribution required by the Twemoji licence (CC BY 4.0); kept in English.
-    if (strings.ABOUT_DESCRIPTION && !strings.ABOUT_DESCRIPTION.includes(TWEMOJI_CREDIT)) {
-        strings.ABOUT_DESCRIPTION += '<br/><br/>' + TWEMOJI_CREDIT;
+    if (typeof strings.ABOUT_DESCRIPTION === 'string') {
+        // Attribution required by the Twemoji licence (CC BY 4.0) is kept in English.
+        strings.ABOUT_DESCRIPTION = [strings.ABOUT_DESCRIPTION, notice[lang], ADAPTED_BY, TWEMOJI_CREDIT]
+            .filter(Boolean).join('<br/><br/>');
     }
     const indent = /\n(\s+)"/.exec(raw);
     fs.writeFileSync(p, JSON.stringify(strings, null, indent ? indent[1] : 4) + '\n');
