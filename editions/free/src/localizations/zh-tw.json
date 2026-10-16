@@ -9,7 +9,7 @@
     "ABOUT_WHAT_IS": "Scribble Jr 是什麼？",
     "ABOUT_DESCRIPTION": "Scribble Jr 是個入門級程式語言，可以讓幼童( 5-7 歲) 建立自己的互動式媒體，像是故事和遊戲。孩子透過圖像化的程式方塊，像組合積木般來讓所建立的角色移動、跳躍、跳舞、唱歌。也可以利用繪圖編輯器來描繪出心目中的角色人物，使用麥克風錄製自己的聲音或其他音效，利用照像機來拍攝自己的照片或放入其他圖片-- 然後組合它們，將孩子心中的想像帶到真實世界。<br/><br/>Scribble Jr 是 ScratchJr 的獨立 Windows 版本，與麻省理工學院（MIT）、塔夫茨大學或 Scratch 基金會無關，也未獲其認可。<br/><br/>Scribble Jr adapted by James and Peter Rafferty.<br/><br/>Character art: Twemoji by Twitter, Inc and other contributors, licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0). All other new art is CC0.",
     "ABOUT_INSPIRED_BY": "ScratchJr 這個軟體的創作靈感來自於 Scratch。在全球有數以百萬計的年輕人( 8歲以上)使用 Scratch，是個非常受歡迎的程式語言( http://scratch.mit.edu ) 。而 ScratchJr 則重新設計操作介面及程式語言，讓它更適合幼童，尤其專注將功能設計地更符合他們的認知、個人、社會、情感發展。<br/> <br/>若需進一步了解，請參考 http://scratchjr.org",
-    "ABOUT_WHY_CREATE": "為什麼創造 ScratchJr？",
+    "ABOUT_WHY_CREATE": "為什麼要創建 ScratchJr？",
     "ABOUT_WHY_CREATE_DESCRIPTION": "程式(或電腦程式)設計是新世代的必備素養，就像寫作能讓你的組識能力、表達能力變好一樣，程式設計也一樣。在過去，程式設計很難普及，但我們認為每個人都該具備這樣的能力，就像寫作能力一樣。<br/> <br/>當幼童使用 ScratchJr 時，他們不只是和電腦互動，更可以透過電腦學習如何創造和表達內心所想。從這個過程，幼童也學到了解決問題、創意設計、邏輯思考的能力，這都是幫助他們在未來成功的基礎。同時，他們在有意義、有動力的情況下使用數學、語文，能力的發展會來得更快。ScratchJr 希望幼童們不僅僅是學習程式設計，也能從程式設計中學習到更多更多。",
     "ABOUT_WHO_CREATED": "誰創造了ScratchJr？",
     "ABOUT_WHO_CREATED_DESCRIPTION": "ScratchJr 的是一項合作開發項目，開發者有 Tufts 大學 Eliot-Pearson 兒童研究與人類發展部部門下的發展技術(DevTech)研究團隊(領導者為Marina Umaschi Bers ，貢獻者有Amanda Strawhacker, Claire Caine, Louise Flannery, Elizabeth Kazakoff, Dylan Portelance )、 MIT媒體實驗室下的終身幼兒園團隊(領導者為Mitchel Resnick，貢獻者有Chris Garrity, Tim Mickel, Carl Bowman, Champika Fernando, Natalie Rusk, Sayamindu Dasgupta, Chris Graves ) 、 Playful發明公司(領導者為Paula Bont＆aacute和Brian Silverman，貢獻者有Jack Geddes, Adrian Gabriel ) 。ScratchJr的Android版本由Two Sigma (領導者為Mark Roth，貢獻者為Kevin Hu )和Benesse公司實現。<br/> <br/>圖像由HvingtQuatre公司(領導者為Julien Gelifier和Adrien Valesa )，Sarah Thomson, Peter Mueller, Jillian Lombardi建立，影片由MIT媒體實驗室的Paula Aguilera出品。我們也感謝所有在測試期間參與的所有人，特別是Sergio Antolinez，Vandendaele Didier和Sjoerd Dirk Meijer。",
@@ -376,5 +376,7 @@
     "USAGE_SCHOOL": "學校",
     "USAGE_HOME": "家裡",
     "USAGE_OTHER": "其他",
-    "USAGE_NONE": "不要再問我"
+    "USAGE_NONE": "不要再問我",
+    "ABOUT_WHY_SCRIBBLE": "為什麼有 Scribble Jr？",
+    "ABOUT_WHY_SCRIBBLE_DESCRIPTION": "Scribble Jr 是為我那最近對電腦特別著迷的兒子，從麻省理工學院（MIT）原版 ScratchJr 程式碼分支（fork）而來的。可惜 iPad 的螢幕不是用透明鋁做的，而 ScratchJr 又沒有電腦版，所以我想，把它移植到他的電腦上是最快、最簡單的辦法。於是就有了今天！"
 }

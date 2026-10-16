@@ -6,6 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execSync} from 'node:child_process';
+import {about} from './about-scribble-jr.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const pageRoot = path.join(repoRoot, 'editions', 'free', 'src');
@@ -56,6 +57,10 @@ for (const file of fs.readdirSync(locDir).filter((f) => f.endsWith('.json'))) {
             strings[key] = original[key].replace(/Scratch ?Jr/g, 'Scribble Jr');
         }
     }
+    const own = about[lang] || about.en;
+    strings.ABOUT_WHY_SCRIBBLE = own.why;
+    strings.ABOUT_WHY_SCRIBBLE_DESCRIPTION = own.story;
+    strings.ABOUT_WHY_CREATE = own.whyCreated;
     if (typeof strings.ABOUT_DESCRIPTION === 'string') {
         // Attribution required by the Twemoji licence (CC BY 4.0) is kept in English.
         strings.ABOUT_DESCRIPTION = [strings.ABOUT_DESCRIPTION, notice[lang], ADAPTED_BY, TWEMOJI_CREDIT]

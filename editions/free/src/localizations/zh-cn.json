@@ -9,7 +9,7 @@
     "ABOUT_WHAT_IS": "Scribble Jr 是什么？",
     "ABOUT_DESCRIPTION": "Scribble Jr 是一个入门级的编程语言，它可以让幼儿 ( 5-7岁 ) 创建互动的故事和游戏，孩子利用图形化的程序积木让角色移动、跳跃、舞蹈、唱歌。孩子也可以利用绘图编辑器绘制自己的角色、用麦克风录制自己声音、用照相机加入自己拍摄的照片。最后用拼积木的方法组合成程序，让他们心中的角色动起来。<br/><br/>Scribble Jr 是 ScratchJr 的独立 Windows 版本，与麻省理工学院（MIT）、塔夫茨大学或 Scratch 基金会无关，也未获得其认可。<br/><br/>Scribble Jr adapted by James and Peter Rafferty.<br/><br/>Character art: Twemoji by Twitter, Inc and other contributors, licensed under CC BY 4.0 (creativecommons.org/licenses/by/4.0). All other new art is CC0.",
     "ABOUT_INSPIRED_BY": "ScratchJr 这个软件的创作灵感来自于 Scratch。在全球有数以百万计的年轻人 ( 8 岁以上 ) 使用 Scratch，是个非常受欢迎的编程语言 (  http://scratch.mit.edu ) 。而 ScratchJr 则重新设计操作界面及编程语言，让它更适合幼儿，尤其专注将功能设计地更符合他们的认知、个人、社会、情感发展。<br/><br/>若需进一步了解，请参考 http://scratchjr.org",
-    "ABOUT_WHY_CREATE": "为什么创造 ScratchJr？",
+    "ABOUT_WHY_CREATE": "为什么要创建 ScratchJr？",
     "ABOUT_WHY_CREATE_DESCRIPTION": "编码 ( 或电脑编程 ) 是新世代的必备素养，就像写作能帮助你组织思路、表达观点，编程也是一样。在过去，编程很难普及，但我们认为每个人都该具备这样的能力，就像写作能力一样。<br/><br/>当幼儿使用 ScratchJr 时，他们不只是和电脑互动，更可以通过电脑学习如何创造和表达内心所想。从这个过程中，孩子们也学到了解决问题、创意设计、逻辑思考的能力，这都是帮助他们在未来成功的基础。同时，他们在有意义、有动力的情况下使用数学、语文，能力的发展会变得更快。ScratchJr 希望幼童们不仅仅是学习编程代码，也能从编码中学习到更多更多。",
     "ABOUT_WHO_CREATED": "谁创造了 ScratchJr？",
     "ABOUT_WHO_CREATED_DESCRIPTION": "ScratchJr 的是一项合作开发项目，开发者有 Tufts 大学 Eliot-Pearson 儿童研究与人类发展部部门下的发展技术  (DevTech)  研究团队 ( 领导者为 Marina Umaschi Bers ，贡献者有 Amanda Strawhacker, Claire Caine, Louise Flannery, Elizabeth Kazakoff, Dylan Portelance  )、 MIT 媒体实验室下的 Lifelong Kindergarten 团队 ( 领导者为  Mitchel Resnick，贡献者有  Chris Garrity, Tim Mickel, Carl Bowman, Champika Fernando, Natalie Rusk, Sayamindu Dasgupta,  Chris Graves )、 Playful Invention 公司 ( 领导者为 Paula Bont＆aacute 和 Brian Silverman，贡献者有  Jack Geddes,  Adrian Gabriel ) 。ScratchJr 的 Android 版本由 Two Sigma ( 领导者为 Mark Roth，贡献者为 Kevin Hu ) 和 Benesse 公司实现。<br/> <br/>图像由 HvingtQuatre 公司 ( 领导者为 Julien Gelifier 和 Adrien Valesa )，Sarah Thomson, Peter Mueller, Jillian Lombardi 建立，影片由 MIT 媒体实验室的 Paula Aguilera 出品。我们也感谢所有在测试期间参与的所有人，特别是 Sergio Antolinez，Vandendaele Didier 和 Sjoerd Dirk Meijer。",
@@ -376,5 +376,7 @@
     "USAGE_SCHOOL": "学校",
     "USAGE_HOME": "家",
     "USAGE_OTHER": "其他",
-    "USAGE_NONE": "不要再问了"
+    "USAGE_NONE": "不要再问了",
+    "ABOUT_WHY_SCRIBBLE": "为什么有 Scribble Jr？",
+    "ABOUT_WHY_SCRIBBLE_DESCRIPTION": "Scribble Jr 是为我那最近对电脑特别着迷的儿子，从麻省理工学院（MIT）原版 ScratchJr 代码分叉（fork）而来的。可惜 iPad 的屏幕不是用透明铝做的，而 ScratchJr 又没有电脑版，所以我想，把它移植到他的电脑上是最快、最简单的办法。于是就有了今天！"
 }
