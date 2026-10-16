@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="480px" height="360px" viewBox="0 0 480 360">
+<g id="Desert.svg">
+<rect x="-4" y="-4" width="488" height="125" fill="#ffe8bd" stroke="none"/>
+<rect x="-4" y="120" width="488" height="245" fill="#ffdca6" stroke="none"/>
+<circle cx="372" cy="70" r="49.3" fill="#fff4bf" stroke="none"/>
+<circle cx="372" cy="70" r="34" fill="#ffd84d" stroke="#f2b230" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<polygon points="20,218 34,150 126,150 140,218" fill="#e3966a" stroke="none"/>
+<polygon points="34,150 126,150 122,160 38,160" fill="#cf7f56" stroke="none"/>
+<polygon points="300,214 312,170 380,170 392,214" fill="#e8a477" stroke="none"/>
+<path d="M-10 370 L-10 220 C8.33 218.33 61.67 209.67 100 210 C138.33 210.33 180 222.67 220 222 C260 221.33 295 206.67 340 206 C385 205.33 465 216 490 218 L490 370 Z" fill="#f3c27a" stroke="none"/>
+<path d="M-10 370 L-10 252 C13.33 250.33 83.33 241.67 130 242 C176.67 242.33 225 254.33 270 254 C315 253.67 363.33 240.67 400 240 C436.67 239.33 475 248.33 490 250 L490 370 Z" fill="#f8d38e" stroke="none"/>
+<path d="M40 290 C80 282 120 284 150 292 M300 310 C340 300 390 302 430 312 M170 340 C200 334 230 334 260 342" fill="none" stroke="#ebbd70" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M38.7 221 L38.7 198 C38.7 188.8 24.9 188.8 24.9 198 L24.9 225.6 C24.9 237.1 31.8 241.7 43.3 241.7 L57.1 241.7 L57.1 221 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M70.9 209.5 L87 209.5 L87 175 C87 165.8 100.8 165.8 100.8 175 L100.8 209.5 C100.8 221 93.9 227.9 82.4 227.9 L70.9 227.9 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M50.2 290 L50.2 154.3 C50.2 135.9 77.8 135.9 77.8 154.3 L77.8 290 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M60.55 163.5 L60.55 278.5 M68.6 170.4 L68.6 271.6" fill="none" stroke="#4a9448" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M400.2 214 L400.2 196 C400.2 188.8 389.4 188.8 389.4 196 L389.4 217.6 C389.4 226.6 394.8 230.2 403.8 230.2 L414.6 230.2 L414.6 214 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M425.4 205 L438 205 L438 178 C438 170.8 448.8 170.8 448.8 178 L448.8 205 C448.8 214 443.4 219.4 434.4 219.4 L425.4 219.4 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M409.2 268 L409.2 161.8 C409.2 147.4 430.8 147.4 430.8 161.8 L430.8 268 Z" fill="#5fae5a" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M417.3 169 L417.3 259 M423.6 174.4 L423.6 253.6" fill="none" stroke="#4a9448" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M330 300 C325 297 323.33 287.33 324 282 C324.67 276.67 329.67 270.33 334 268 C338.33 265.67 345.67 265.67 350 268 C354.33 270.33 359.33 276.67 360 282 C360.67 287.33 359 297 354 300 C349 303 335 303 330 300 Z" fill="#6cbf62" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M342 270 L342 298" fill="none" stroke="#4a9448" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="342" cy="266" r="6" fill="#ff7aa8" stroke="#2b2b33" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M150 300 C144.33 297 153 287.33 158 284 C163 280.67 173.67 278.67 180 280 C186.33 281.33 194 288.33 196 292 C198 295.67 199.67 300.67 192 302 C184.33 303.33 155.67 303 150 300 Z" fill="#c98d65" stroke="#2b2b33" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M250 268 C246.67 265.67 252.33 260 256 258 C259.67 256 268 254.67 272 256 C276 257.33 279.33 263.33 280 266 C280.67 268.67 281 271.67 276 272 C271 272.33 253.33 270.33 250 268 Z" fill="#d9a07a" stroke="#2b2b33" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M210.1 107.8 C213.4 103.4 217.8 104.5 220 110 C222.2 104.5 226.6 103.4 229.9 107.8" fill="none" stroke="#2b2b33" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+</g>
+</svg>

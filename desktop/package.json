@@ -1,0 +1,16 @@
+{
+  "name": "scribble-jr-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Scribble Jr: Tauri v2 Windows app based on the ScratchJr web client",
+  "type": "module",
+  "scripts": {
+    "assemble": "node assemble.mjs",
+    "tauri": "tauri",
+    "build": "tauri build",
+    "dev-run": "node assemble.mjs && tauri build --debug"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.3"
+  }
+}

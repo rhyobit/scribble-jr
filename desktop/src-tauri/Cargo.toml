@@ -1,0 +1,29 @@
+[package]
+name = "scribble-jr"
+version = "1.0.0"
+description = "Scribble Jr Windows app (based on ScratchJr)"
+edition = "2021"
+publish = false
+
+[lib]
+name = "scribble_jr_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+rusqlite = { version = "0.32", features = ["bundled", "limits"] }
+base64 = "0.22"
+md-5 = "0.10"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

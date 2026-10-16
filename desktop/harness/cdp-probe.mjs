@@ -1,0 +1,13 @@
+const t = (await (await fetch('http://127.0.0.1:9333/json')).json()).find(t => t.type === 'page');
+const ws = new WebSocket(t.webSocketDebuggerUrl); await new Promise(r => ws.onopen = r);
+let id = 1; const pend = {}; ws.onmessage = m => { const x = JSON.parse(m.data); if (pend[x.id]) pend[x.id](x); };
+const send = (method, params = {}) => new Promise(r => { const i = id++; pend[i] = r; ws.send(JSON.stringify({id: i, method, params})); });
+const ev = async e => (await send('Runtime.evaluate', {expression: e, returnByValue: true, awaitPromise: true})).result;
+await send('Page.navigate', {url: 'http://tauri.localhost/home.html'}); await new Promise(r => setTimeout(r, 5000));
+console.log(JSON.stringify(await ev(`({href: location.href, wrapc: [...document.querySelectorAll('#wrapc *')].slice(0,8).map(e => e.tagName + '.' + e.className + ' ' + JSON.stringify(e.getBoundingClientRect())), size: [innerWidth, innerHeight], touch: 'ontouchstart' in document.documentElement})`)));
+const p = (await ev(`(() => { const el = document.querySelector('#wrapc .aproject.empty'); const r = el.getBoundingClientRect(); return {x: r.x + r.width/2, y: r.y + r.height/2, cls: el.className}; })()`)).result.value;
+console.log(JSON.stringify(p));
+for (const type of ['mouseMoved', 'mousePressed', 'mouseReleased']) await send('Input.dispatchMouseEvent', {type, x: p.x, y: p.y, button: 'left', clickCount: 1});
+await new Promise(r => setTimeout(r, 6000));
+console.log(JSON.stringify((await ev('location.href + " sprites=" + document.querySelectorAll("#spritecc > div, .spritethumb").length')).result.value));
+ws.close();

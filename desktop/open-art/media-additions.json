@@ -1,0 +1,40 @@
+{
+    "sprites": [
+        {
+            "md5": "Tabby.svg",
+            "width": 160,
+            "height": 168,
+            "ext": "svg",
+            "name": "Tabby",
+            "order": "characters,02 funky",
+            "tags": [
+                "characters",
+                "02 funky"
+            ]
+        },
+        {
+            "md5": "Plum.svg",
+            "width": 152,
+            "height": 196,
+            "ext": "svg",
+            "name": "Plum",
+            "order": "characters,02 funky",
+            "tags": [
+                "characters",
+                "02 funky"
+            ]
+        },
+        {
+            "md5": "Nova.svg",
+            "width": 132,
+            "height": 206,
+            "ext": "svg",
+            "name": "Nova",
+            "order": "characters,02 funky",
+            "tags": [
+                "characters",
+                "02 funky"
+            ]
+        }
+    ]
+}
