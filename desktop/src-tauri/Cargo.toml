@@ -1,6 +1,6 @@
 [package]
 name = "scribble-jr"
-version = "1.0.0"
+version = "1.0.1"
 description = "Scribble Jr Windows app (based on ScratchJr)"
 edition = "2021"
 publish = false
