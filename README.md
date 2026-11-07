@@ -138,6 +138,12 @@ Every push to `main` also builds the installer on GitHub Actions
 
 How the pieces fit:
 
+![Scribble Jr architecture: the shared ScratchJr client runs in WebView2 on Windows, talking to a Rust shell over Tauri IPC, with no server](doc/scribble-jr-architecture.svg)
+
+The diagram follows the original ScratchJr architecture diagram, which drew a
+desktop version as future work. Scribble Jr is that desktop version, but built as
+an offline Windows app rather than a website.
+
 | Path | What it is |
 |---|---|
 | `src/`, `editions/free/src/` | The ScratchJr web client (lightly modified: rename, paint-editor zoom fix, new art, no intro video) |
