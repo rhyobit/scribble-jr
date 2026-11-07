@@ -15,7 +15,7 @@ const ORIGINAL_COMMIT = '566f2f9';
 const RENAME_KEYS = ['QUICK_INTRO', 'ABOUT_SCRATCHJR', 'ABOUT_WHAT_IS', 'ABOUT_DESCRIPTION',
     'SHARING_EMAIL_SUBJECT', 'SHARING_EMAIL_TEXT', 'USAGE_QUESTION'];
 
-const ADAPTED_BY = 'Scribble Jr adapted by James and Peter Rafferty.';
+const ADAPTED_BY = 'Scribble Jr: code by Peter Rafferty, art direction by James Rafferty.';
 const TWEMOJI_CREDIT = 'Character art: Twemoji by Twitter, Inc and other contributors, licensed under CC BY 4.0 ' +
     '(creativecommons.org/licenses/by/4.0). All other new art is CC0.';
 

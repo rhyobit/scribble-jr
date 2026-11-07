@@ -496,7 +496,7 @@ function creditsSvg () {
     const font = 'Segoe UI, Arial, sans-serif';
     const lines = [
         ['Scribble Jr — a Windows app for young coders', 34, 'bold', 42],
-        ['Adapted by James and Peter Rafferty', 25, 'bold', 82],
+        ['Code by Peter Rafferty, art direction by James Rafferty', 25, 'bold', 82],
         ['Based on ScratchJr by the DevTech Research Group at Tufts University,', 23, 'normal', 126],
         ['the Lifelong Kindergarten Group at the MIT Media Lab and Playful Invention Company.', 23, 'normal', 158],
         ['Not affiliated with or endorsed by MIT or Tufts.', 21, 'normal', 204]

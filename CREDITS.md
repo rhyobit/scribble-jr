@@ -1,6 +1,6 @@
 # Credits and artwork licences
 
-Scribble Jr was adapted by James and Peter Rafferty.
+Scribble Jr was adapted by Peter Rafferty (code) and James Rafferty (art direction).
 
 Scribble Jr is an independent Windows version of ScratchJr. It is not affiliated
 with or endorsed by MIT, Tufts University or the Scratch Foundation.

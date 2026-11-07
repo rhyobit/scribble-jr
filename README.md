@@ -5,7 +5,7 @@ picture blocks to make characters move, jump, dance and sing. It is built from
 the open-source code of [ScratchJr](https://www.scratchjr.org/), made to work with
 a keyboard and mouse on Windows, with an all-new, openly licensed art library.
 
-Adapted by James and Peter Rafferty.
+Code by Peter Rafferty, art direction by James Rafferty.
 
 > Scribble Jr is an independent project. It is not affiliated with or endorsed by
 > MIT, Tufts University or the Scratch Foundation. "Scratch", "ScratchJr" and the
