@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "Scribble Jr: Tauri v2 Windows app based on the ScratchJr web client",
+  "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
     "assemble": "node assemble.mjs",

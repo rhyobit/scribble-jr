@@ -16,6 +16,9 @@
   },
   "bundle": {
     "active": true,
+    "publisher": "Peter Rafferty",
+    "copyright": "Copyright (c) 2026 Peter Rafferty, James Rafferty and Scribble Jr contributors. Based on ScratchJr, Copyright (c) 2016 Massachusetts Institute of Technology.",
+    "license": "BSD-3-Clause",
     "targets": ["nsis"],
     "icon": [
       "icons/32x32.png",
