@@ -1,0 +1,54 @@
+# Builds the Windows installer on every push to main (and on demand) and
+# uploads it as a workflow artifact. Steps follow "Building" in README.md.
+name: Windows build
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: windows-build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: |
+            package-lock.json
+            desktop/package-lock.json
+
+      - name: Build web client
+        shell: bash
+        run: |
+          npm ci --ignore-scripts
+          NODE_OPTIONS=--openssl-legacy-provider npx webpack --mode=production
+
+      - name: Build installer
+        shell: bash
+        working-directory: desktop
+        run: |
+          npm ci
+          npx tauri build
+
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: scribble-jr-windows-${{ github.sha }}
+          path: |
+            desktop/src-tauri/target/release/bundle/nsis/*-setup.exe
+            desktop/src-tauri/target/release/scribble-jr.exe
+          if-no-files-found: error
+          retention-days: 30
