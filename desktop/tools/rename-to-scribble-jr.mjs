@@ -6,7 +6,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {execSync} from 'node:child_process';
-import {about} from './about-scribble-jr.mjs';
+import {about, CREDIT} from './about-scribble-jr.mjs';
 
 const repoRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', '..');
 const pageRoot = path.join(repoRoot, 'editions', 'free', 'src');
@@ -15,7 +15,7 @@ const ORIGINAL_COMMIT = '566f2f9';
 const RENAME_KEYS = ['QUICK_INTRO', 'ABOUT_SCRATCHJR', 'ABOUT_WHAT_IS', 'ABOUT_DESCRIPTION',
     'SHARING_EMAIL_SUBJECT', 'SHARING_EMAIL_TEXT', 'USAGE_QUESTION'];
 
-const ADAPTED_BY = 'Scribble Jr: code by Peter Rafferty, art direction by James Rafferty.';
+const CREDIT_LINE = `${CREDIT}.`;
 const TWEMOJI_CREDIT = 'Character art: Twemoji by Twitter, Inc and other contributors, licensed under CC BY 4.0 ' +
     '(creativecommons.org/licenses/by/4.0). All other new art is CC0.';
 
@@ -63,7 +63,7 @@ for (const file of fs.readdirSync(locDir).filter((f) => f.endsWith('.json'))) {
     strings.ABOUT_WHY_CREATE = own.whyCreated;
     if (typeof strings.ABOUT_DESCRIPTION === 'string') {
         // Attribution required by the Twemoji licence (CC BY 4.0) is kept in English.
-        strings.ABOUT_DESCRIPTION = [strings.ABOUT_DESCRIPTION, notice[lang], ADAPTED_BY, TWEMOJI_CREDIT]
+        strings.ABOUT_DESCRIPTION = [strings.ABOUT_DESCRIPTION, notice[lang], CREDIT_LINE, TWEMOJI_CREDIT]
             .filter(Boolean).join('<br/><br/>');
     }
     const indent = /\n(\s+)"/.exec(raw);

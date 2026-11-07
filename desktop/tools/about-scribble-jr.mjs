@@ -2,6 +2,10 @@
 //   ABOUT_WHY_SCRIBBLE / ABOUT_WHY_SCRIBBLE_DESCRIPTION: the "Why Scribble Jr?" section
 //   ABOUT_WHY_CREATE: replaces "Why Did We Create ScratchJr?" (that section is the
 //   original ScratchJr team's text, so the heading should not say "we" in our app)
+
+// Who made Scribble Jr; also used by make-brand.mjs for the start-screen credits.
+export const CREDIT = 'Code by Peter Rafferty, art direction by James Rafferty';
+
 export const about = {
     en: {
         why: 'Why Scribble Jr?',

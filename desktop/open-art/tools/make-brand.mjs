@@ -11,6 +11,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {CREDIT} from '../../tools/about-scribble-jr.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const openArt = path.resolve(here, '..');
@@ -496,7 +497,7 @@ function creditsSvg () {
     const font = 'Segoe UI, Arial, sans-serif';
     const lines = [
         ['Scribble Jr — a Windows app for young coders', 34, 'bold', 42],
-        ['Code by Peter Rafferty, art direction by James Rafferty', 25, 'bold', 82],
+        [CREDIT, 25, 'bold', 82],
         ['Based on ScratchJr by the DevTech Research Group at Tufts University,', 23, 'normal', 126],
         ['the Lifelong Kindergarten Group at the MIT Media Lab and Playful Invention Company.', 23, 'normal', 158],
         ['Not affiliated with or endorsed by MIT or Tufts.', 21, 'normal', 204]
